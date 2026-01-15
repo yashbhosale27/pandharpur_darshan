@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+header {
+    background: #5a2d0c;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+
+nav {
+    background: #8b4513;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background: #5a2d0c;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: #8b4513;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li a {
+    padding: 10px 15px;
+}
+
+.hero {
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    animation: slideshow 15s infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.hero-text {
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.hero-text h2 {
+    font-size: 3rem;
+}
+
+.hero-text p {
+    font-size: 1.3rem;
+}
+
+@keyframes slideshow {
+    0% {
+        background-image: url("images/lord.jpg");
+    }
+
+    33% {
+        background-image: url("images/vitthal2.jpeg");
+    }
+
+    66% {
+        background-image: url("images/rukmini.webp");
+    }
+
+    100% {
+        background-image: url("images/vitthal1.jpg");
+    }
+}
+
+main {
+    padding: 40px;
+}
+
+main section {
+    margin-bottom: 35px;
+}
+
+main h2 {
+    color: #5a2d0c;
+    margin-bottom: 10px;
+}
+
+.gallery {
+    display: flex;
+    gap: 20px;
+}
+
+.gallery img {
+    width: 30%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    background: #5a2d0c;
+    color: white;
+    padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-box {
+    width: 30%;
+}
+
+.footer-box ul {
+    list-style: none;
+}
+
+.footer-box ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-box ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-links li {
+    margin-bottom: 6px;
+}
+
+.social-links li a:hover {
+    color: #ffd700;
+}
+
+.copy {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+#contact {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.contact-form {
+    width: 50%;
+    border: 2px solid #8b0000;
+
+    padding: 20px;
+    margin-left: 50px;
+
+    border-radius: 10px;
+    background-color: #fffaf0;
+
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #8b0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #a00000;
+}
